@@ -1,0 +1,38 @@
+# ------------------------- BASELINE FOR PYTHON 3.12.5 ------------------------ #
+
+wheel==0.38.1
+charset-normalizer==3.1.0
+et-xmlfile==1.1.0
+idna==3.4
+Jinja2==3.1.2
+jmespath==1.0.1
+MarkupSafe==2.1.2
+openpyxl==3.1.0
+psycopg2-binary
+python-dateutil==2.8.2
+pytz==2023.3
+requests==2.30.0
+s3transfer==0.6.1
+six==1.16.0
+statsmodels==0.14.0
+throttle==0.2.2
+urllib3==1.26.15
+xgboost==1.7.1
+bidict==0.22.0
+boto3==1.26.0
+botocore==1.29.0
+certifi==2024.12.14
+lifelines==0.27.5
+seaborn==0.13.0
+
+# ------------- DEPENDENCIES THAT ALREADY SATISFIEDED BY OTHER LIB ------ #
+
+# 
+
+# --------------- WIN BUILD TOOL REQUIRED VIA EVNV - NOT SURE YET ------- #
+
+matplotlib==3.10.0
+pandas==2.2.3
+numpy==2.2.2
+scikit-learn==1.6.1
+scipy==1.13.1
