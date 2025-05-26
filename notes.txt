@@ -1,0 +1,8 @@
+Or cohorts: C:\Users\RoeeOrland\Oncohost DX\Shares - R&D\Adverse Events\RoeeAnalysis2025\data from Or\May 2025
+
+Ori code and results: "Shares - R&D\Ori S\irAE\"
+THEY'RE BASED ON PYTHON 3.8.10!!!
+The models are in "Shares - R&D\Ori S\irAE\RAP_Predictor from Gil\models\"
+The models with the most promising results from that analysis were:
+rap_model_sheba_Systemic_AE.pkl
+rap_model_sheba_(2+ AEs).pkl
