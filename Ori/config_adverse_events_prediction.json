@@ -1,0 +1,50 @@
+{
+    "rap_response_predictor": {
+        "globals": {
+            "RESPONDER": 1,
+            "NONRESPONDER": 0,
+            "STABLE": 1
+        },
+        "response_metrics": [
+            "AE in 6 months"
+        ],
+        "prophet_score_threshold": 0.5,
+        "AE in 6 months_initialization_params": {
+            "model_file": "models/rap_model_sheba_Systemic_AE.pkl",
+            "model_type": "xgb",
+            "protein_selection_method": "ks",
+            "n_expected_outliers": 2,
+            "sp_xgb_params": {
+                "max_depth": 3,
+                "eta": 0.8,
+                "lambda": 5,
+                "alpha": 2,
+                "gamma": 1,
+                "num_parallel_tree": 3,
+                "objective": "binary:logistic",
+                "eval_metric": "logloss"
+            },
+            "sp_train_ratio": 0.75,
+            "sp_ensemble_size": 80,
+            "cm_xgb_params": {
+                "max_depth": 3,
+                "eta": 0.8,
+                "lambda": 5,
+                "alpha": 2,
+                "gamma": 1.0,
+                "num_parallel_tree": 3,
+                "objective": "binary:logistic",
+                "eval_metric": "logloss"
+            },
+            "cm_train_ratio": 0.75,
+            "cm_ensemble_size": 0,
+            "number_of_KS_proteins": 50,
+            "sp_p_threshold": "mean_response_rate",
+            "sp_features": [],
+            "sp_scaling_method": "score",
+            "sp_scaling_points": 10,
+            "clinical_features": [],
+            "auc_array_evaluation": false
+        }
+    }
+}
